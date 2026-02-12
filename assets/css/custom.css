@@ -1,0 +1,119 @@
+/* Violet Evergarden 风格 - 优雅衬线体 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+body {
+    font-family: 'Noto Serif SC', 'Playfair Display', 'Georgia', 'Times New Roman', serif;
+    background-color: #FFF8F0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', 'Noto Serif SC', serif;
+    color: #5A3C8C;
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    color: #C8A2C8;
+}
+
+article a {
+    color: #9966CC;
+    text-decoration-color: #C9A84C;
+}
+
+article a:hover {
+    color: #C9A84C;
+}
+
+/* 柔和的卡片阴影 */
+.card {
+    box-shadow: 0 2px 16px rgba(153, 102, 204, 0.08);
+    border: 1px solid rgba(200, 162, 200, 0.2);
+}
+
+/* 代码块样式 */
+pre {
+    border-left: 3px solid #C9A84C;
+    background: rgba(230, 230, 250, 0.3) !important;
+}
+
+.dark pre {
+    background: rgba(40, 25, 70, 0.6) !important;
+}
+
+/* 引用块 */
+blockquote {
+    border-left-color: #9966CC;
+    background: rgba(230, 230, 250, 0.2);
+}
+
+/* 选中文本 */
+::selection {
+    background: rgba(153, 102, 204, 0.3);
+    color: #2D1946;
+}
+
+/* 关于页面去掉分割线和多余元素 */
+.single #single_header .mb-6 {
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+}
+.single .article-content {
+    border: none !important;
+}
+.single article header,
+.single article header + *,
+.single .mt-1.mb-6 {
+    border: none !important;
+}
+/* 去掉header下方的分隔 */
+.single .mt-1.mb-6::after,
+.single #single_header::after {
+    display: none !important;
+    border: none !important;
+}
+
+/* 首页 profile hero 左右布局 */
+.profile-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.profile-left {
+    flex-shrink: 0;
+}
+
+.profile-mascot img {
+    width: 150px;
+    height: auto;
+    filter: drop-shadow(0 4px 12px rgba(153, 102, 204, 0.15));
+}
+
+/* 小屏幕下垂直排列 */
+@media (max-width: 640px) {
+    .profile-hero {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .profile-mascot img {
+        width: 100px;
+    }
+}
+
+/* 首页间距调整 */
+main > article:first-child {
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+}
+
+/* 最近文章标题和卡片间距 */
+main > section, main > .section {
+    margin-top: 2rem;
+}
+
+main > section h2, main header h2 {
+    margin-bottom: 2rem;
+}

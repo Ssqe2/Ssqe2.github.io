@@ -1,0 +1,15 @@
+theme = "blowfish"
+baseURL = "https://Ssqe2.github.io/"
+defaultContentLanguage = "zh-cn"
+enableRobotsTXT = true
+[pagination]
+  pagerSize = 10
+summaryLength = 30
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"

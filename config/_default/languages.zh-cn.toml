@@ -1,0 +1,16 @@
+languageCode = "zh-CN"
+languageName = "中文"
+weight = 1
+title = "h1acat's Blog"
+
+[params]
+  displayName = "h1acat"
+  isoCode = "zh-CN"
+  description = "(≧▽≦)/ Hi~"
+
+[params.author]
+  name = "h1acat"
+  headline = "(≧▽≦)/ Hi~"
+  links = [
+    { github = "https://github.com/Ssqe2" },
+  ]
